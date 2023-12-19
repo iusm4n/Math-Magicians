@@ -1,0 +1,15 @@
+.Quote-container {
+    display: flex;
+    margin: 50px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Quote {
+    font-size: 20px;
+    font-weight: bold;
+    width:  70vw;
+    color: #090909;
+}
