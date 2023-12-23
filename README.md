@@ -1,3 +1,7 @@
+# Live DEMO 
+
+Click here [Live Demo](https://iusm4n.github.io/Math-Magicians/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

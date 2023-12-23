@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calculator.css'; 
+import './Calculator.css';
 
 const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('');
@@ -18,7 +18,8 @@ const Calculator = () => {
 
   const handleEvaluate = () => {
     try {
-      setDisplayValue(eval(displayValue).toString());
+      const result = new Function('return ' + displayValue)();
+      setDisplayValue(result.toString());
     } catch (error) {
       setDisplayValue('Error');
     }
@@ -29,7 +30,7 @@ const Calculator = () => {
       <div className="calculator">
         <form>
           <div className="display">
-          <input type="text" placeholder="0" className="inputTerms"  value={displayValue} readOnly />
+            <input type="text" placeholder="0" className="inputTerms" value={displayValue} readOnly />
           </div>
           <div>
             <input type="button" value="AC" onClick={handleClear} />
