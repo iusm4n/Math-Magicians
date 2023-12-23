@@ -13,11 +13,11 @@ import Calculator from './components/Calculator.jsx';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='Math-Magicians'>
         <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route exact path="/Math-Magicians" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<Quote />} />
         </Routes>
