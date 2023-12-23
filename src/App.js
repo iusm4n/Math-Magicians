@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route exact path="/Math-Magicians" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<Quote />} />
         </Routes>
